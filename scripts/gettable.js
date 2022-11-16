@@ -17,7 +17,7 @@ function getDataFromApi(event) {
   var myArray = [];
   console.log("calling API");
 
-  $.ajax(settings).done(function (response) {
+  $.ajax(settings).done((response) => {
     myArray = response;
     buildTable(myArray);
     console.log(myArray);
